@@ -10,7 +10,7 @@ class Kannister < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Darwin_arm64.tar.gz"
-      sha256 "777ef61cfa72099b19bd73a4d6b9a632d50841a0d2c19e6bc39c70fb1d84f8a6"
+      sha256 "1b44739f1be1fc88bfea800505660ff47f4bdb0bb863a67a406b901f9ddb1769"
 
       def install
         bin.install "kannister-cli"
@@ -18,7 +18,7 @@ class Kannister < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Darwin_x86_64.tar.gz"
-      sha256 "c7f5f2384c8b15703a46679f011cf0f9a6ad48fa187738b92a25bf239cd4c722"
+      sha256 "5ec0ee2a7f1d616beedb9cca39c60a89897991bd2722bb5bc78b359978d36b94"
 
       def install
         bin.install "kannister-cli"
@@ -29,7 +29,7 @@ class Kannister < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Linux_arm64.tar.gz"
-      sha256 "82098bf601a26223dfbcd001fc8b41f3f244eb930fb2381cd26a1f32c5233811"
+      sha256 "c669c30c6e967f55912334ce81144a81178abe84b5d5c18d508491c622421ab7"
 
       def install
         bin.install "kannister-cli"
@@ -37,7 +37,7 @@ class Kannister < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Linux_x86_64.tar.gz"
-      sha256 "d49c3815e5c21d660fb5102ca687873aca3e9dae1fc803f935bc3a8b42c2c6fc"
+      sha256 "5ba887f5b2f4155e1a2c4a4f77fee71bd31bbabb239d4d196971d2c8a4d9d1ab"
 
       def install
         bin.install "kannister-cli"
