@@ -5,20 +5,20 @@
 class Kannister < Formula
   desc "Homebrew installer for kannister-cli."
   homepage "https://github.com/kannister-app/homebrew-kannister"
-  version "0.0.8"
+  version "0.0.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.8/kannister-cli_Darwin_x86_64.tar.gz"
-      sha256 "0118e0126b81319d7d77e243c4fbf1403db30c2e2bdcac78ceae435cd036442c"
+    if Hardware::CPU.arm?
+      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Darwin_arm64.tar.gz"
+      sha256 "777ef61cfa72099b19bd73a4d6b9a632d50841a0d2c19e6bc39c70fb1d84f8a6"
 
       def install
         bin.install "kannister-cli"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.8/kannister-cli_Darwin_arm64.tar.gz"
-      sha256 "ba1850e3135d5a0460c3f6d4ac535f27ba612664484db77effdd7ff4b46a3669"
+    if Hardware::CPU.intel?
+      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Darwin_x86_64.tar.gz"
+      sha256 "c7f5f2384c8b15703a46679f011cf0f9a6ad48fa187738b92a25bf239cd4c722"
 
       def install
         bin.install "kannister-cli"
@@ -28,16 +28,16 @@ class Kannister < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.8/kannister-cli_Linux_arm64.tar.gz"
-      sha256 "d1da690e911051241f79fc314d41e388cb6b42b246e8d66a8e77d56604180081"
+      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Linux_arm64.tar.gz"
+      sha256 "82098bf601a26223dfbcd001fc8b41f3f244eb930fb2381cd26a1f32c5233811"
 
       def install
         bin.install "kannister-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.8/kannister-cli_Linux_x86_64.tar.gz"
-      sha256 "f6e6dad804ec57034de5d308a8fb59875d75dc2ede379f68038325fa3061d94e"
+      url "https://github.com/kannister-app/kannister-cli/releases/download/v0.0.1/kannister-cli_Linux_x86_64.tar.gz"
+      sha256 "d49c3815e5c21d660fb5102ca687873aca3e9dae1fc803f935bc3a8b42c2c6fc"
 
       def install
         bin.install "kannister-cli"
