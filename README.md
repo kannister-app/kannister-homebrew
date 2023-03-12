@@ -2,7 +2,7 @@
 
 Homebrew formula for installing the `kannister-cli`.
 
-Usage:
+## Install
 
 Tap
 ```
@@ -17,4 +17,15 @@ brew install kannister
 Test
 ```
 kannister --version
+```
+## Uninstall
+
+Uninstall
+```
+brew uninstall kannister
+```
+
+Untap
+```
+brew untap kannister-app/kannister
 ```
