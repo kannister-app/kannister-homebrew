@@ -1,4 +1,4 @@
-# homebrew-kannister
+# kannister-homebrew
 
 Homebrew formula for installing the `kannister-cli`.
 
